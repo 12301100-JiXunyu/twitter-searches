@@ -10,27 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <EditText
-        android:id="@+id/queryEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="fill_horizontal"
-        android:hint="@string/queryPrompt"
-        android:imeOptions="actionNext" >
-         
-        <requestFocus/>
-    </EditText>
 
     <LinearLayout
         android:layout_gravity="fill_horizontal" >
 
         <EditText
-            android:id="@+id/tagEditText"
+            android:id="@+id/urlEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|fill_horizontal"
             android:layout_weight="1"
-            android:hint="@string/tagPrompt"
+            android:hint="input your favorite website"
             android:imeOptions="actionDone" />
 
         <ImageButton
@@ -57,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/taggedSearches"
+            android:text="Favorite Websites"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <ListView
